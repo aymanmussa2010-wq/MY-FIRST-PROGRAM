@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h1>برنامجي الأول</h1>
+
+<button onclick="alert('هلا أيمن!')">
+اضغط هنا
+</button>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>برنامجي الأول</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>برنامجي الأول</h1>
+
+    <input id="name" placeholder="اكتب اسمك">
+
+    <br>
+
+    <button onclick="hello()">
+        اضغط هنا
+    </button>
+
+    <h2 id="message"></h2>
+
+    <script>
+        function hello() {
+
+            let name = document.getElementById("name").value;
+
+            document.getElementById("message").innerText =
+                "هلا " + name + " 👋";
+
+        }
+    </script>
+
+</body>
+
+</html>
